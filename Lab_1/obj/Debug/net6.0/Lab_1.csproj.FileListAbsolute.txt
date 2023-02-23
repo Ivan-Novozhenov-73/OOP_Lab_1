@@ -1,0 +1,15 @@
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\bin\Debug\net6.0\Lab_1.exe
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\bin\Debug\net6.0\Lab_1.deps.json
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\bin\Debug\net6.0\Lab_1.runtimeconfig.json
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\bin\Debug\net6.0\Lab_1.dll
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\bin\Debug\net6.0\Lab_1.pdb
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.csproj.AssemblyReference.cache
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.AssemblyInfoInputs.cache
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.AssemblyInfo.cs
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.csproj.CoreCompileInputs.cache
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.dll
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\refint\Lab_1.dll
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.pdb
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\Lab_1.genruntimeconfig.cache
+D:\Google Диск\Курс 2\ООП\Lab_1\Lab_1\obj\Debug\net6.0\ref\Lab_1.dll
