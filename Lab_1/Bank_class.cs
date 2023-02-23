@@ -10,7 +10,7 @@ namespace Bank_namespace
     {
         public string _bankName;            // название банка
         private int _countDeposits;         // кол-во депозитов
-        private float _amountDeposits;      // сумма депозитов
+        private double _amountDeposits;      // сумма депозитов
         private float _interestRate;        // процентная ставка
         private int _numClients;            // кол-во клиентов
         private int _yearFoundation;        // год основания
@@ -53,7 +53,7 @@ namespace Bank_namespace
         }
 
         // конструктор с семью параметрами
-        public Bank(string bankName, int countDeposits, float amountDeposits, float interestRate,
+        public Bank(string bankName, int countDeposits, double amountDeposits, float interestRate,
             int numClients, int yearFoundation, string location)
         {
             _bankName = bankName;
@@ -69,8 +69,8 @@ namespace Bank_namespace
         {
             Console.WriteLine($"Название банка: {_bankName}");
             Console.WriteLine($"Количество депозитов: {_countDeposits}");
-            Console.WriteLine($"Сумма депозитов: {_amountDeposits}");
-            Console.WriteLine($"Процентная ставка: {_interestRate}");
+            Console.WriteLine($"Сумма депозитов: {_amountDeposits}$");
+            Console.WriteLine($"Процентная ставка: {_interestRate}%");
             Console.WriteLine($"Количество клиентов: {_numClients}");
             Console.WriteLine($"Год основания: {_yearFoundation}");
             Console.WriteLine($"Расположение: {_location}\n");

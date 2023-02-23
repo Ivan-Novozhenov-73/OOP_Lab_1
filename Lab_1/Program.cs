@@ -13,7 +13,7 @@ namespace Lab_1
             Bank bank = new Bank();
             Bank sber = new Bank("Сбер");
             Bank tinkoff = new Bank("Тинькофф", 100);
-            Bank alpha = new Bank("Альфа-банк", 5000, 4788862.57f, 5.3f, 22500, 1990, "Москва");
+            Bank alpha = new Bank("Альфа-банк", 5000, 4788862.57, 5.3f, 22500, 1990, "Москва");
 
             bank.print();
             sber.print(); 
