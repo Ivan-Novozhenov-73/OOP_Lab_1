@@ -16,6 +16,7 @@ namespace Bank_namespace
         private int _yearFoundation;        // год основания
         private string _location;           // расположение
 
+        // конструктор без параметров
         public Bank()
         {
             _bankName = "Банк";
@@ -27,6 +28,43 @@ namespace Bank_namespace
             _location = "Город";
         }
 
+        // конструктор с одним параметром
+        public Bank(string bankName)
+        {
+            _bankName = bankName;
+            _countDeposits = 0;
+            _amountDeposits = 0;
+            _interestRate = 0;
+            _numClients = 0;
+            _yearFoundation = 1970;
+            _location = "Город";
+        }
+
+        // конструктор с двумя параметрами
+        public Bank(string bankName, int countDeposits)
+        {
+            _bankName = bankName;
+            _countDeposits = countDeposits;
+            _amountDeposits = 0;
+            _interestRate = 0;
+            _numClients = 0;
+            _yearFoundation = 1970;
+            _location = "Город";
+        }
+
+        // конструктор с семью параметрами
+        public Bank(string bankName, int countDeposits, float amountDeposits, float interestRate,
+            int numClients, int yearFoundation, string location)
+        {
+            _bankName = bankName;
+            _countDeposits = countDeposits;
+            _amountDeposits = amountDeposits;
+            _interestRate = interestRate;
+            _numClients = numClients;
+            _yearFoundation = yearFoundation;
+            _location = location;
+        }
+
         public void print()
         {
             Console.WriteLine($"Название банка: {_bankName}");
@@ -35,7 +73,7 @@ namespace Bank_namespace
             Console.WriteLine($"Процентная ставка: {_interestRate}");
             Console.WriteLine($"Количество клиентов: {_numClients}");
             Console.WriteLine($"Год основания: {_yearFoundation}");
-            Console.WriteLine($"Расположение: {_location}");
+            Console.WriteLine($"Расположение: {_location}\n");
         }
     }
 }
