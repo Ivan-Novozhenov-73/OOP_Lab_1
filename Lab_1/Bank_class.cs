@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bank_namespace
 {
     internal class Bank
     {
+        /* ПОЛЯ */
         public string _bankName;            // название банка
         private int _countDeposits;         // кол-во депозитов
         private double _amountDeposits;      // сумма депозитов
@@ -16,6 +13,8 @@ namespace Bank_namespace
         private int _yearFoundation;        // год основания
         private string _location;           // расположение
 
+
+        /* МЕТОДЫ */
         // конструктор без параметров
         public Bank()
         {
@@ -65,6 +64,19 @@ namespace Bank_namespace
             _location = location;
         }
 
+        // переопределение метода ToString()
+        public override string ToString()
+        {
+            return $"Название банка: {_bankName}\n" +
+                $"Количество депозитов: {_countDeposits}\n" +
+                $"Сумма депозитов: {_amountDeposits}$\n" +
+                $"Процентная ставка: {_interestRate}%\n" +
+                $"Количество клиентов: {_numClients}\n" +
+                $"Год основания: {_yearFoundation}\n" +
+                $"Расположение: {_location}\n";
+        }
+
+        // вывод полей класса
         public void print()
         {
             Console.WriteLine($"Название банка: {_bankName}");

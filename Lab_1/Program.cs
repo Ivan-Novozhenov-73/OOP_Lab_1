@@ -15,10 +15,10 @@ namespace Lab_1
             Bank tinkoff = new Bank("Тинькофф", 100);
             Bank alpha = new Bank("Альфа-банк", 5000, 4788862.57, 5.3f, 22500, 1990, "Москва");
 
-            bank.print();
-            sber.print(); 
-            tinkoff.print(); 
-            alpha.print();
+            Console.WriteLine(bank);
+            Console.WriteLine(sber);
+            Console.WriteLine(tinkoff);
+            Console.WriteLine(alpha);
         }
     }
 }
