@@ -19,6 +19,7 @@ namespace Lab_1
             Console.WriteLine(sber);
             Console.WriteLine(tinkoff);
             Console.WriteLine(alpha);
+            Console.WriteLine(alpha._bankName); ;
         }
     }
 }

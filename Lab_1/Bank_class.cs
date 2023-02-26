@@ -2,7 +2,7 @@
 
 namespace Bank_namespace
 {
-    internal class Bank
+    class Bank
     {
         /* ПОЛЯ */
         public string _bankName;            // название банка
@@ -74,18 +74,6 @@ namespace Bank_namespace
                 $"Количество клиентов: {_numClients}\n" +
                 $"Год основания: {_yearFoundation}\n" +
                 $"Расположение: {_location}\n";
-        }
-
-        // вывод полей класса
-        public void print()
-        {
-            Console.WriteLine($"Название банка: {_bankName}");
-            Console.WriteLine($"Количество депозитов: {_countDeposits}");
-            Console.WriteLine($"Сумма депозитов: {_amountDeposits}$");
-            Console.WriteLine($"Процентная ставка: {_interestRate}%");
-            Console.WriteLine($"Количество клиентов: {_numClients}");
-            Console.WriteLine($"Год основания: {_yearFoundation}");
-            Console.WriteLine($"Расположение: {_location}\n");
         }
     }
 }
