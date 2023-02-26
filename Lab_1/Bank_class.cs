@@ -157,7 +157,5 @@ namespace Bank_namespace
         {
             _location = location;
         }
-
-
     }
 }
