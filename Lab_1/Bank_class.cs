@@ -76,6 +76,8 @@ namespace Bank_namespace
                 $"Расположение: {_location}\n";
         }
 
+
+
         // вывод кол-ва депозитов
         public int get_countDeposits()
         {
@@ -111,5 +113,51 @@ namespace Bank_namespace
         {
             return _location;
         }
+
+
+
+        // установить название банка
+        public void set_bankName(string bankName)
+        {
+            _bankName = bankName;
+        }
+
+        // установить кол-во депозитов
+        public void set_countDeposits(int countDeposits)
+        {
+            _countDeposits = countDeposits;
+        }
+
+        // установить сумму депозитов
+        public void set_amountDeposits(double amountDeposits)
+        {
+            _amountDeposits = amountDeposits;
+        }
+
+        // установить процентную ставку
+        public void set_interestRate(float interestRate)
+        {
+            _interestRate = interestRate;
+        }
+
+        // установить кол-во клиентов
+        public void set_numClients(int numClients)
+        {
+            _numClients = numClients;
+        }
+
+        // установить год основания
+        public void set_yearFoundation(int yearFoundation)
+        {
+            _yearFoundation = yearFoundation;
+        }
+
+        // установить расположение
+        public void set_location(string location)
+        {
+            _location = location;
+        }
+
+
     }
 }

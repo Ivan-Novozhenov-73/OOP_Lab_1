@@ -19,19 +19,73 @@ namespace Lab_1
             switch (num)
             {
                 case "1":
-                    //Console.WriteLine("\n" + bank_var);
-                    Console.WriteLine(bank_var.get_countDeposits());
-                    Console.WriteLine(bank_var.get_amountDeposits());
-                    Console.WriteLine(bank_var.get_interestRate());
-                    Console.WriteLine(bank_var.get_numClients());
-                    Console.WriteLine(bank_var.get_yearFoundation());
-                    Console.WriteLine(bank_var.get_location());
+                    Console.WriteLine("\n" + bank_var);
                     break;
-
-                //case "2":
-                //    Console.
-                //    break;
+                case "2":
+                    Console.Write("\nКол-во клиентов в 16-ричном представлении = ");
+                    Console.WriteLine(Convert.ToString(bank_var.get_numClients(), 16));
+                    break;
+                case "3":
+                    change_field(ref bank_var);
+                    break;
             }
+        }
+
+        static void change_field(ref Bank bank_var)
+        {
+            Console.Clear();
+            Console.WriteLine("Какое поле изменить?");
+            Console.WriteLine("1) Название банка");
+            Console.WriteLine("2) Кол-во депозитов");
+            Console.WriteLine("3) Сумма депозитов");
+            Console.WriteLine("4) Процентная ставка");
+            Console.WriteLine("5) Кол-во клиентов");
+            Console.WriteLine("6) Год основания");
+            Console.WriteLine("7) Расположение");
+            Console.WriteLine("Введите число: ");
+            string num = Console.ReadLine();
+
+            switch (num)
+            {
+                case "1":
+                    Console.WriteLine("\nТекущее значение: " + bank_var._bankName);
+                    Console.Write("Новое значение: ");
+                    string name = Console.ReadLine();
+                    break;
+                case "2":
+                    Console.WriteLine("\nТекущее значение: " + bank_var.get_countDeposits());
+                    Console.Write("Новое значение: ");
+                    int countDeposits = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case "3":
+                    Console.WriteLine("\nТекущее значение: " + bank_var.get_amountDeposits());
+                    Console.Write("Новое значение: ");
+                    double amountDeposits = Convert.ToDouble(Console.ReadLine());
+                    break;
+                case "4":
+                    Console.WriteLine("\nТекущее значение: " + bank_var.get_interestRate());
+                    Console.Write("Новое значение: ");
+                    float interestRate = (float)Convert.ToDouble(Console.ReadLine());
+                    break;
+                case "5":
+                    Console.WriteLine("\nТекущее значение: " + bank_var.get_numClients());
+                    Console.Write("Новое значение: ");
+                    int numClients = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case "6":
+                    Console.WriteLine("\nТекущее значение: " + bank_var.get_yearFoundation());
+                    Console.Write("Новое значение: ");
+                    int yearFoundation = Convert.ToInt32(Console.ReadLine());
+                    break;
+                case "7":
+                    Console.WriteLine("\nТекущее значение: " + bank_var._bankName);
+                    Console.Write("Новое значение: ");
+                    string location = Console.ReadLine();
+                    break;
+            }
+
+            Console.WriteLine("\nОбновленный объект");
+            Console.WriteLine(bank_var);
         }
 
         static void Main(string[] args)
