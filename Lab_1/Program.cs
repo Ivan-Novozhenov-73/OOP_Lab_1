@@ -42,7 +42,7 @@ namespace Lab_1
             Console.WriteLine("5) Кол-во клиентов");
             Console.WriteLine("6) Год основания");
             Console.WriteLine("7) Расположение");
-            Console.WriteLine("Введите число: ");
+            Console.Write("Введите число: ");
             string num = Console.ReadLine();
 
             switch (num)
@@ -50,37 +50,44 @@ namespace Lab_1
                 case "1":
                     Console.WriteLine("\nТекущее значение: " + bank_var._bankName);
                     Console.Write("Новое значение: ");
-                    string name = Console.ReadLine();
+                    string bankName = Console.ReadLine();
+                    bank_var.set_bankName(bankName);
                     break;
                 case "2":
                     Console.WriteLine("\nТекущее значение: " + bank_var.get_countDeposits());
                     Console.Write("Новое значение: ");
                     int countDeposits = Convert.ToInt32(Console.ReadLine());
+                    bank_var.set_countDeposits(countDeposits);
                     break;
                 case "3":
                     Console.WriteLine("\nТекущее значение: " + bank_var.get_amountDeposits());
                     Console.Write("Новое значение: ");
                     double amountDeposits = Convert.ToDouble(Console.ReadLine());
+                    bank_var.set_amountDeposits(amountDeposits);
                     break;
                 case "4":
                     Console.WriteLine("\nТекущее значение: " + bank_var.get_interestRate());
                     Console.Write("Новое значение: ");
                     float interestRate = (float)Convert.ToDouble(Console.ReadLine());
+                    bank_var.set_interestRate(interestRate);
                     break;
                 case "5":
                     Console.WriteLine("\nТекущее значение: " + bank_var.get_numClients());
                     Console.Write("Новое значение: ");
                     int numClients = Convert.ToInt32(Console.ReadLine());
+                    bank_var.set_numClients(numClients);
                     break;
                 case "6":
                     Console.WriteLine("\nТекущее значение: " + bank_var.get_yearFoundation());
                     Console.Write("Новое значение: ");
                     int yearFoundation = Convert.ToInt32(Console.ReadLine());
+                    bank_var.set_yearFoundation(yearFoundation);
                     break;
                 case "7":
                     Console.WriteLine("\nТекущее значение: " + bank_var._bankName);
                     Console.Write("Новое значение: ");
                     string location = Console.ReadLine();
+                    bank_var.set_location(location);
                     break;
             }
 
