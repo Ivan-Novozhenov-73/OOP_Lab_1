@@ -75,5 +75,7 @@ namespace Bank_namespace
                 $"Год основания: {_yearFoundation}\n" +
                 $"Расположение: {_location}\n";
         }
+
+
     }
 }
