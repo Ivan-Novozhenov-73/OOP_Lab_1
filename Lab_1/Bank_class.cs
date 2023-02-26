@@ -7,7 +7,7 @@ namespace Bank_namespace
         /* ПОЛЯ */
         public string _bankName;            // название банка
         private int _countDeposits;         // кол-во депозитов
-        private double _amountDeposits;      // сумма депозитов
+        private double _amountDeposits;     // сумма депозитов
         private float _interestRate;        // процентная ставка
         private int _numClients;            // кол-во клиентов
         private int _yearFoundation;        // год основания
@@ -76,6 +76,40 @@ namespace Bank_namespace
                 $"Расположение: {_location}\n";
         }
 
+        // вывод кол-ва депозитов
+        public int get_countDeposits()
+        {
+            return _countDeposits;
+        }
 
+        // вывод суммы депозитов
+        public double get_amountDeposits()
+        {
+            return _amountDeposits;
+        }
+
+        // вывод процентной ставки
+        public float get_interestRate()
+        {
+            return _interestRate;
+        }
+
+        // вывод кол-ва клиентов
+        public int get_numClients()
+        {
+            return _numClients;
+        }
+
+        // вывод года основания
+        public int get_yearFoundation()
+        {
+            return _yearFoundation;
+        }
+
+        // вывод расположения
+        public string get_location()
+        {
+            return _location;
+        }
     }
 }

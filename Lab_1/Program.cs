@@ -19,7 +19,13 @@ namespace Lab_1
             switch (num)
             {
                 case "1":
-                    Console.WriteLine("\n" + bank_var);
+                    //Console.WriteLine("\n" + bank_var);
+                    Console.WriteLine(bank_var.get_countDeposits());
+                    Console.WriteLine(bank_var.get_amountDeposits());
+                    Console.WriteLine(bank_var.get_interestRate());
+                    Console.WriteLine(bank_var.get_numClients());
+                    Console.WriteLine(bank_var.get_yearFoundation());
+                    Console.WriteLine(bank_var.get_location());
                     break;
 
                 //case "2":
