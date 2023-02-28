@@ -2,20 +2,54 @@
 
 namespace Bank_namespace
 {
+    /// <summary>
+    /// Класс, реализующий банк
+    /// </summary>
     class Bank
     {
         /* ПОЛЯ */
-        public string _bankName;            // название банка
-        private int _countDeposits;         // кол-во депозитов
-        private double _amountDeposits;     // сумма депозитов
-        private float _interestRate;        // процентная ставка
-        private int _numClients;            // кол-во клиентов
-        private int _yearFoundation;        // год основания
-        private string _location;           // расположение
+
+        /// <summary>
+        /// Название банка
+        /// </summary>
+        public string _bankName;   
+        
+        /// <summary>
+        /// Количество депозитов
+        /// </summary>
+        private int _countDeposits;
+
+        /// <summary>
+        /// Сумма депозитов
+        /// </summary>
+        private double _amountDeposits; 
+        
+        /// <summary>
+        /// Процентная ставка
+        /// </summary>
+        private float _interestRate;
+
+        /// <summary>
+        /// Количество клиентов
+        /// </summary>
+        private int _numClients; 
+        
+        /// <summary>
+        /// Год основания
+        /// </summary>
+        private int _yearFoundation;
+        
+        /// <summary>
+        /// Расположение
+        /// </summary>
+        private string _location;
 
 
         /* МЕТОДЫ */
-        // конструктор без параметров
+
+        /// <summary>
+        /// Конструктор без параметров
+        /// </summary>
         public Bank()
         {
             _bankName = "Банк";
@@ -27,7 +61,10 @@ namespace Bank_namespace
             _location = "Город";
         }
 
-        // конструктор с одним параметром
+        /// <summary>
+        /// Конструктор с 1 параметром
+        /// </summary>
+        /// <param name="bankName">Название банка</param>
         public Bank(string bankName)
         {
             _bankName = bankName;
@@ -39,7 +76,11 @@ namespace Bank_namespace
             _location = "Город";
         }
 
-        // конструктор с двумя параметрами
+        /// <summary>
+        /// Конструктор с 2 параметрами
+        /// </summary>
+        /// <param name="bankName">Название банка</param>
+        /// <param name="countDeposits">Количество депозитов</param>
         public Bank(string bankName, int countDeposits)
         {
             _bankName = bankName;
@@ -51,7 +92,16 @@ namespace Bank_namespace
             _location = "Город";
         }
 
-        // конструктор с семью параметрами
+        /// <summary>
+        /// Конструктор с 7 параметрами
+        /// </summary>
+        /// <param name="bankName">Название банка</param>
+        /// <param name="countDeposits">Количество депозитов</param>
+        /// <param name="amountDeposits">Сумма депозитов</param>
+        /// <param name="interestRate">Процентная ставка</param>
+        /// <param name="numClients">Количество клиентов</param>
+        /// <param name="yearFoundation">Год основания</param>
+        /// <param name="location">Расположение</param>
         public Bank(string bankName, int countDeposits, double amountDeposits, float interestRate,
             int numClients, int yearFoundation, string location)
         {
@@ -64,7 +114,10 @@ namespace Bank_namespace
             _location = location;
         }
 
-        // переопределение метода ToString()
+        /// <summary>
+        /// Переопределение метода ToString()
+        /// </summary>
+        /// <returns>Строку с информацией о банке</returns>
         public override string ToString()
         {
             return $"Название банка: {_bankName}\n" +
@@ -78,37 +131,55 @@ namespace Bank_namespace
 
 
 
-        // вывод кол-ва депозитов
+        /// <summary>
+        /// Геттер количества депозитов
+        /// </summary>
+        /// <returns>Количество депозитов</returns>
         public int get_countDeposits()
         {
             return _countDeposits;
         }
 
-        // вывод суммы депозитов
+        /// <summary>
+        /// Геттер суммы депозитов
+        /// </summary>
+        /// <returns>Сумма депозитов</returns>
         public double get_amountDeposits()
         {
             return _amountDeposits;
         }
 
-        // вывод процентной ставки
+        /// <summary>
+        /// Геттер процентной ставки
+        /// </summary>
+        /// <returns>Процентная ставка</returns>
         public float get_interestRate()
         {
             return _interestRate;
         }
 
-        // вывод кол-ва клиентов
+        /// <summary>
+        /// Геттер количества клиентов
+        /// </summary>
+        /// <returns>Количество клиентов</returns>
         public int get_numClients()
         {
             return _numClients;
         }
 
-        // вывод года основания
+        /// <summary>
+        /// Геттер года основания
+        /// </summary>
+        /// <returns>Год основания</returns>
         public int get_yearFoundation()
         {
             return _yearFoundation;
         }
 
-        // вывод расположения
+        /// <summary>
+        /// Геттер расположения
+        /// </summary>
+        /// <returns>Расположение</returns>
         public string get_location()
         {
             return _location;
@@ -116,43 +187,64 @@ namespace Bank_namespace
 
 
 
-        // установить название банка
+        /// <summary>
+        /// Сеттер названия банка
+        /// </summary>
+        /// <param name="bankName">Название банка</param>
         public void set_bankName(string bankName)
         {
             _bankName = bankName;
         }
 
-        // установить кол-во депозитов
+        /// <summary>
+        /// Сеттер количества депозитов
+        /// </summary>
+        /// <param name="countDeposits">Количество депозитов</param>
         public void set_countDeposits(int countDeposits)
         {
             _countDeposits = countDeposits;
         }
 
-        // установить сумму депозитов
+        /// <summary>
+        /// Сеттер суммы депозитов
+        /// </summary>
+        /// <param name="amountDeposits">Сумма депозитов</param>
         public void set_amountDeposits(double amountDeposits)
         {
             _amountDeposits = amountDeposits;
         }
 
-        // установить процентную ставку
+        /// <summary>
+        /// Сеттер процентной ставки
+        /// </summary>
+        /// <param name="interestRate">Процентная ставка</param>
         public void set_interestRate(float interestRate)
         {
             _interestRate = interestRate;
         }
 
-        // установить кол-во клиентов
+        /// <summary>
+        /// Сеттер количества клиентов
+        /// </summary>
+        /// <param name="numClients">Количество клиентов</param>
         public void set_numClients(int numClients)
         {
             _numClients = numClients;
         }
 
-        // установить год основания
+        /// <summary>
+        /// Сеттер года основания
+        /// </summary>
+        /// <param name="yearFoundation">Год основания</param>
         public void set_yearFoundation(int yearFoundation)
         {
             _yearFoundation = yearFoundation;
         }
 
-        // установить расположение
+        /// <summary>
+        /// Сеттер расположения
+        /// </summary>
+        /// <param name="location">Расположение</param>
         public void set_location(string location)
         {
             _location = location;

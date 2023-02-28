@@ -127,7 +127,6 @@ namespace Lab_1
                 case "4":
                     print_info2(ref alpha);
                     break;
-                
             }
         }
     }
