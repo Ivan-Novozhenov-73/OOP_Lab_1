@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bank_namespace
+namespace Lab_1
 {
     /// <summary>
     /// Класс, реализующий банк
